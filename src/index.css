@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800;900&family=Lexend:wght@400;500;600&family=Space+Grotesk:wght@600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-body: "Lexend", sans-serif;
+  --font-display: "Inter", sans-serif;
+  --font-label: "Space Grotesk", sans-serif;
+
+  --color-volt: #abd600;
+  --color-obsidian: #131313;
+  --color-surface-low: #1c1b1b;
+  --color-surface-highest: #353534;
+
+  --radius-DEFAULT: 0.5rem;
+  --radius-lg: 1rem;
+  --radius-xl: 1.5rem;
+}
+
+@layer base {
+  body {
+    @apply bg-obsidian text-white font-body antialiased selection:bg-volt selection:text-black;
+  }
+}
+
+.glass {
+  @apply bg-surface-low/40 backdrop-blur-md border border-white/10;
+}
+
+.glass-card {
+  @apply bg-surface-low/60 backdrop-blur-xl border border-white/10;
+}
+
+.text-gradient {
+  @apply text-transparent bg-clip-text bg-gradient-to-r from-volt to-white;
+}
