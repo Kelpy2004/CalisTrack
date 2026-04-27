@@ -2,19 +2,35 @@
 <img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
 </div>
 
-# Run and deploy your AI Studio app
+# CalisTrack
 
-This contains everything you need to run your app locally.
+CalisTrack is a responsive fitness landing page built around a high-energy calisthenics brand. The experience focuses on bold visuals, live-session storytelling, schedule highlights, and a strong community-driven feel.
 
-View your app in AI Studio: https://ai.studio/apps/7fdd453d-e609-4c6a-bf94-de394add901a
+## Highlights
 
-## Run Locally
+- Cinematic hero section with motion-driven transitions
+- Live training session cards for premium coaching content
+- Upcoming schedule blocks for structured session discovery
+- Community and testimonial sections that reinforce the product story
+- Responsive layout built for desktop and mobile browsing
 
-**Prerequisites:**  Node.js
+## Tech Stack
 
+- React 19
+- TypeScript
+- Vite
+- Tailwind CSS
+- Motion
+- Lucide React
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+## Getting Started
+
+**Prerequisites:** Node.js
+
+1. Install dependencies with `npm install`
+2. Start the development server with `npm run dev`
+3. Open the local Vite URL shown in the terminal
+
+## Project Goal
+
+The goal of this project is to present calisthenics training as a premium, performance-focused product with a strong visual identity instead of a generic fitness template.
