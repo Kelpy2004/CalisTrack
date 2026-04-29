@@ -31,6 +31,20 @@ CalisTrack is a responsive fitness landing page built around a high-energy calis
 2. Start the development server with `npm run dev`
 3. Open the local Vite URL shown in the terminal
 
+## Available Scripts
+
+- `npm run dev` starts the Vite development server on port `3000`
+- `npm run build` creates a production build
+- `npm run preview` previews the production build locally
+- `npm run lint` runs the TypeScript type check
+
+## Project Structure
+
+- `src/main.tsx` boots the React application
+- `src/App.tsx` contains the landing page sections and motion-driven UI
+- `src/index.css` defines the global visual system, layout styling, and theme rules
+- `public/` stores static assets used by the experience
+
 ## Project Goal
 
 The goal of this project is to present calisthenics training as a premium, performance-focused product with a strong visual identity instead of a generic fitness template.
