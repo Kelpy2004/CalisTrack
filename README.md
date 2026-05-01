@@ -44,6 +44,14 @@ CalisTrack is a responsive fitness landing page built around a high-energy calis
 - `src/App.tsx` contains the landing page sections and motion-driven UI
 - `src/index.css` defines the global visual system, layout styling, and theme rules
 - `public/` stores static assets used by the experience
+- `public/images/` contains the training and athlete imagery shown across the page
+
+## Design Direction
+
+- High-contrast black and volt-green styling for a premium training aesthetic
+- Motion-led section reveals to make the landing page feel fast and energetic
+- Editorial-style headlines paired with utility-driven supporting copy
+- Visual emphasis on coaching, structure, and athlete discipline instead of generic gym marketing
 
 ## Project Goal
 
