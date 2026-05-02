@@ -1,12 +1,12 @@
 import { motion, AnimatePresence } from "motion/react";
-import { 
-  Search, 
-  Bell, 
-  User, 
-  ArrowRight, 
-  Play, 
-  Users, 
-  Clock, 
+import {
+  Search,
+  Bell,
+  User,
+  ArrowRight,
+  Play,
+  Users,
+  Clock,
   PersonStanding,
   Quote,
   Timer
@@ -19,7 +19,7 @@ const Navbar = () => {
       <div className="text-2xl font-black italic text-volt tracking-tighter cursor-pointer">
         CALISTRACK
       </div>
-      
+
       <div className="hidden md:flex gap-8 items-center font-label uppercase tracking-widest font-bold text-xs">
         <a href="#" className="text-white/70 hover:text-volt transition-colors">Training</a>
         <a href="#" className="text-volt border-b-2 border-volt pb-1">Live</a>
@@ -51,8 +51,8 @@ const Hero = () => {
   return (
     <section className="relative max-w-7xl mx-auto px-6 md:px-12 pt-32 pb-24 flex flex-col md:flex-row items-center gap-16 min-h-[90vh]">
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_left,rgba(171,214,0,0.1),transparent_50%)] -z-10" />
-      
-      <motion.div 
+
+      <motion.div
         initial={{ opacity: 0, x: -30 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
@@ -62,26 +62,26 @@ const Hero = () => {
           <span className="w-2 h-2 rounded-full bg-volt shadow-[0_0_8px_rgba(171,214,0,0.8)]" />
           <span className="font-label text-[10px] tracking-widest text-white/80">PRECISION ENGINEERING</span>
         </div>
-        
+
         <h1 className="text-6xl md:text-8xl font-black leading-[0.9] tracking-tighter text-white">
           MASTER YOUR <br />
           <span className="text-gradient">KINETIC</span> POTENTIAL.
         </h1>
-        
+
         <p className="text-lg text-white/60 max-w-xl font-body leading-relaxed">
-          CalisTrack is engineered for high-performance athletes who demand absolute discipline. 
+          CalisTrack is engineered for high-performance athletes who demand absolute discipline.
           We fuse cutting-edge biomechanics tracking with world-class live coaching to shatter plateaus.
         </p>
-        
+
         <div className="flex flex-wrap gap-4 pt-4">
-          <motion.button 
+          <motion.button
             whileHover={{ scale: 1.02 }}
             whileTap={{ scale: 0.98 }}
             className="bg-volt text-black font-label text-xs tracking-widest font-bold px-8 py-4 rounded-DEFAULT hover:bg-white transition-colors"
           >
             START TRAINING
           </motion.button>
-          <motion.button 
+          <motion.button
             whileHover={{ scale: 1.02 }}
             whileTap={{ scale: 0.98 }}
             className="glass text-white font-label text-xs tracking-widest font-bold px-8 py-4 rounded-DEFAULT hover:bg-white/10 transition-colors"
@@ -91,16 +91,16 @@ const Hero = () => {
         </div>
       </motion.div>
 
-      <motion.div 
+      <motion.div
         initial={{ opacity: 0, scale: 0.9 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 1, ease: "easeOut" }}
         className="flex-1 relative w-full aspect-square md:aspect-auto md:h-[600px]"
       >
         <div className="absolute -inset-10 bg-volt/10 blur-[120px] rounded-full -z-10" />
-        <img 
-          src="/images/handstand.png" 
-          alt="Athlete in motion" 
+        <img
+          src="/images/handstand.png"
+          alt="Athlete in motion"
           className="w-full h-full object-cover rounded-xl border border-white/10 shadow-2xl grayscale contrast-125 hover:grayscale-0 transition-all duration-700"
           referrerPolicy="no-referrer"
         />
@@ -142,7 +142,7 @@ const LiveSessions = () => {
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         {sessions.map((session, i) => (
-          <motion.div 
+          <motion.div
             key={session.id}
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -150,14 +150,14 @@ const LiveSessions = () => {
             viewport={{ once: true }}
             className="group relative rounded-xl overflow-hidden glass aspect-video cursor-pointer"
           >
-            <img 
-              src={session.image} 
-              alt={session.title} 
+            <img
+              src={session.image}
+              alt={session.title}
               className="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:scale-105 transition-transform duration-700 grayscale group-hover:grayscale-0"
               referrerPolicy="no-referrer"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent" />
-            
+
             <div className="absolute top-6 left-6 flex items-center gap-3">
               <div className="bg-red-500 text-white font-label text-[10px] font-bold px-2 py-1 rounded-sm flex items-center gap-1">
                 <span className="w-1.5 h-1.5 rounded-full bg-white animate-pulse" /> LIVE
@@ -191,7 +191,7 @@ const Schedule = () => {
       <h2 className="text-2xl font-black text-white mb-8 border-l-4 border-volt pl-4">UPCOMING SCHEDULE</h2>
       <div className="space-y-4">
         {items.map((item, i) => (
-          <motion.div 
+          <motion.div
             key={i}
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -255,7 +255,7 @@ const CommunityImpact = () => {
               tier: "Elite Tier"
             }
           ].map((t, i) => (
-            <motion.div 
+            <motion.div
               key={i}
               initial={{ opacity: 0, scale: 0.95 }}
               whileInView={{ opacity: 1, scale: 1 }}
@@ -286,7 +286,7 @@ const Footer = () => {
         <div>
           <div className="text-xl font-black italic text-volt mb-2">CALISTRACK</div>
           <p className="text-[10px] font-label font-bold text-white/30 tracking-widest uppercase">
-            © 2024 CALISTRACK. PRECISION & DISCIPLINE.
+            &copy; 2024 CALISTRACK. PRECISION &amp; DISCIPLINE.
           </p>
         </div>
         <div className="flex gap-8 text-[10px] font-label font-bold text-white/30 tracking-widest uppercase">
@@ -314,6 +314,3 @@ export default function App() {
     </div>
   );
 }
-
-
-
