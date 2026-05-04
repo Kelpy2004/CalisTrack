@@ -56,3 +56,4 @@ CalisTrack is a responsive fitness landing page built around a high-energy calis
 ## Project Goal
 
 The goal of this project is to present calisthenics training as a premium, performance-focused product with a strong visual identity instead of a generic fitness template.
+//
