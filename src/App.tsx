@@ -1,17 +1,13 @@
-import { motion, AnimatePresence } from "motion/react";
+import { motion } from "motion/react";
 import {
   Search,
   Bell,
   User,
   ArrowRight,
-  Play,
   Users,
-  Clock,
-  PersonStanding,
   Quote,
   Timer
 } from "lucide-react";
-import { useState, useEffect } from "react";
 
 const Navbar = () => {
   return (
